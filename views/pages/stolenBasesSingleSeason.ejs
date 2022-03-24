@@ -1,0 +1,37 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-stolen-single-season container">
+    <h2 class="main-h2 text-center">
+        <%= name %>
+    </h2>
+    <section class="section section-stolen-single-season">
+        <div class="row">
+            <% data.forEach(item=> { %>
+                <div class="col-md-2">
+                    <figure class="figure figure-stolen-single-season">
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Name:</u> <%= item.Name %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Age:</u> <%= item.Age %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Home Runs:</u> <%= item.HomeRuns %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Year:</u> <%= item.Year %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Throws:</u> <%= item.Throws %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-stolen-single-season">
+                            <u>Rank:</u> <%= item.Rank %>
+                        </figcaption>
+                    </figure>
+                </div>
+                <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

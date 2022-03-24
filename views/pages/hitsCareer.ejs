@@ -1,0 +1,34 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-hits-career container">
+    <h2 class="main-h2 text-center">
+        <%= name %>
+    </h2>
+    <section class="section section-hits-career">
+        <div class="row">
+            <% data.forEach(item=> { %>
+                <div class="col-md-2">
+                    <figure class="figure figure-hits-career">
+                        <figcaption class="figcaption figcap-hits-career">
+                            <u>Name:</u> <%= item.Player %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-hits-career">
+                            <u>Age:</u> <%= item.YearsAge %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-hits-career">
+                            <u>Number Of Hits:</u> <%= item.Hits %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-hits-career">
+                            <u>Throws:</u> <%= item.Throws %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-hits-career">
+                            <u>Ranks:</u> <%= item.Rank %>
+                        </figcaption>
+                    </figure>
+                </div>
+            <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

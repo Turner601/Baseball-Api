@@ -1,0 +1,37 @@
+<%- include('../partials/header'); %>
+
+<main class="main main-batting-avgs-single-season container">
+    <h2 class="main-h2 text-center">
+        <%= name %>
+    </h2>
+    <section class="section section-batting-avgs-single-season">
+        <div class="row">
+            <% data.forEach(item=> { %>
+                <div class="col-md-2">
+                    <figure class="figure figure-batting-avgs-single-season">
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Name:</u> <%= item.Name %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Age:</u> <%= item.Age %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Batting Average:</u> <%= item["Batting-Avg"] %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Year:</u> <%= item.Year %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Throws:</u> <%= item.Throws %>
+                        </figcaption>
+                        <figcaption class="figcaption figcap-batting-avgs-single-season">
+                            <u>Rank:</u> <%= item.Rank %>
+                        </figcaption>
+                    </figure>
+                </div>
+                <% }) %>
+        </div>
+    </section>
+</main>
+
+<%- include('../partials/footer'); %>

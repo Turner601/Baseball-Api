@@ -1,0 +1,69 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background: #eaeae3;
+}
+
+.main-h2 {
+    padding: 25px 0;
+}
+
+/* Header */
+header {
+    background: black;
+}
+
+header h1 {
+    color: dodgerblue;
+}
+
+.nav-link {
+    color: red;
+    font-size: 20px;
+}
+
+/* Main */
+.home-header {
+    padding: 25px 0;
+}
+
+.baseball-image {
+    padding-bottom: 25px;
+}
+
+/* Footer */
+footer {
+    background: black;
+}
+
+footer p {
+    font-size: 18px;
+    color: dodgerblue;
+    text-transform: capitalize;
+}
+
+footer a {
+    text-decoration: none;
+    color: red;
+}
+
+/* Career Hits */
+.figure-hits-single-season, .figure-hits-career, .figure-era-single-season, .figure-era-career, .figure-stolen-single-season, .figure-stolen-career, .figure-batting-avgs-single-season, .figure-batting-avgs-career, .figure-rbi-single-season, .figure-rbi-season {
+    padding: 10px;
+    height: 200px;
+    width: 200px;
+    border: 2px solid black;
+}
+
+.figcap-hits-career, .figcap-stolen-single-season, .figcap-stolen-career, .figcap-batting-avgs-career, .figcap-rbi-season {
+    padding-top: 5px;
+}
+
+/* ERA Single Season */
+.figcap-era-single-season, .figcap-batting-avgs-single-season, .figcap-rbi-single-season {
+    padding-top: 2px;
+}
